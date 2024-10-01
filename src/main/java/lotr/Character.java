@@ -1,11 +1,13 @@
 package lotr;
 
-import lombok.AllArgsConstructor;
-
-@AllArgsConstructor
 public abstract class Character {
    private int power;
    private int hp;
+
+   public Character(int power1, int hp1) {
+      power = power1;
+      hp = hp1;
+   }
 
    public boolean isAlive() {
       return hp > 0;
