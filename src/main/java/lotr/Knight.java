@@ -4,13 +4,8 @@ import java.util.Random;
 import lotr.kickstrategy.NobleKick;
 
 public class Knight extends Character{
-    private static final Random random = new Random();
-    private static final int hp = random.nextInt(2,12);
-    private static final int power = random.nextInt(2,12);
-
-
     public Knight() {
-        super(power, hp);
+        super(new Random().nextInt(12-2)+2, new Random().nextInt(12-2)+2);
     }
 
     @Override
